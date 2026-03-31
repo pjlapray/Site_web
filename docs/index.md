@@ -16,7 +16,7 @@ Ceci vient en complément des ressources fournies sur Moodle.
     Bases de la logique combinatoire et séquentielle pour la 1ère année.
     [:octicons-arrow-right-24: Accéder au cours](en/intro.md)
 
--   :material-cpu: **Systèmes Embarqués Reconfigurables I**
+-   :material-cpu-64-bit: **Systèmes Embarqués Reconfigurables I**
     ---
     Introduction au langage VHDL et à la conception sur FPGA (1ère année).
     [:octicons-arrow-right-24: Accéder au cours](ser1/intro.md)
