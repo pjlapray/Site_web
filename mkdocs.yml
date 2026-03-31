@@ -37,13 +37,10 @@ nav:
   - Accueil: index.md
   - "COURS THÉORIQUES":
       - Introduction: cours/intro.md
-      - Architecture RISC-V: cours/riscv.md
-      - Logique Combinatoire: cours/logique.md
   - "TRAVAUX PRATIQUES":
-      - TP1 : Prise en main: tp/tp1.md
-      - TP2 : Compteurs VHDL: tp/tp2.md
+      - Introduction: tp/intro.md
   - Ressources:
-      - Guide Diagnostic: diagnostic_reload.md
+      - Guide Diagnostic: tuto/intro.md
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css

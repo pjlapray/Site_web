@@ -7,10 +7,3 @@
 .md-nav__list {
     margin-top: 0;
 }
-
-### Ce qui va changer :
-* Le nom "Architecture Numérique et VHDL" restera écrit dans l'onglet de votre navigateur.
-* Dans la barre de gauche, vous aurez directement vos sections (**Accueil**, **COURS THÉORIQUES**, etc.) sans la répétition du nom du site en haut.
-* J'ai mis les noms de sections en majuscules dans le `nav` pour bien les distinguer des pages, comme c'est souvent le cas sur les sites de documentation modernes.
-
-N'oubliez pas de faire votre `git add .`, `git commit` et `git push` pour voir le résultat en ligne !
