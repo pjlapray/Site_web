@@ -15,15 +15,13 @@
 }
 
 /* --- AGRANDISSEMENT DU LOGO --- */
-/* Utilisation d'un sélecteur plus large pour garantir l'affichage sur toutes les pages */
 .md-header__button.md-logo img, 
 .md-logo img {
-    height: 3.5rem !important; /* Augmentation légère et force l'application */
+    height: 3.5rem !important;
     width: auto !important;
     display: block;
 }
 
-/* Ajustement de la barre de navigation pour accueillir un logo plus grand */
 .md-header__button.md-logo {
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
@@ -32,9 +30,34 @@
     align-items: center;
 }
 
-/* Correction spécifique pour les terminaux mobiles et tablettes */
 @media screen and (max-width: 76.25em) {
     .md-logo img {
         height: 2.5rem !important;
     }
+}
+
+/* --- STYLE DES LIENS DE TITRE (PERMALINKS) --- */
+/* On cache l'icône par défaut et on l'affiche au survol du titre */
+.md-content__inner h1:hover .headerlink,
+.md-content__inner h2:hover .headerlink,
+.md-content__inner h3:hover .headerlink,
+.md-content__inner h4:hover .headerlink {
+    visibility: visible;
+    opacity: 1;
+}
+
+.headerlink {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    margin-left: 0.5rem;
+    color: var(--md-primary-fg-color);
+    text-decoration: none;
+}
+
+/* Remplacer le symbole ¶ par une icône de lien via le contenu CSS */
+.headerlink::after {
+    content: "🔗";
+    font-size: 0.8em;
+    vertical-align: middle;
 }

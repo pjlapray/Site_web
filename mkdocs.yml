@@ -67,3 +67,5 @@ markdown_extensions:
   - pymdownx.details
   - toc:
       permalink: true
+      separator: "-"
+      
