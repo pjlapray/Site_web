@@ -35,23 +35,24 @@ theme:
 
 nav:
   - Accueil: index.md
-  - "Electronique Numérique":
+  - "Électronique Numérique":
       - Introduction: en/intro.md
-      - Logique Combinatoire: en/logique_combinatoire.md
+      - Logique Combinatoire: 
+          - Présentation: en/logique_combinatoire.md
           - Tableau de Karnaugh: en/tableau_de_karnagh.md
       - Logique Séquentielle: en/logique_sequentielle.md
   - "Syst. Emb. Reconfig. 1":
-      - FPGA : ser1/fpga.md
-      - VHDL : ser1/vhdl.md
-      - Simulation VHDL : ser1/simulation.md
-      - Synthèse et Implémentation : ser1/sytnhèse.md
-      - Affectation des broches : ser1/sytnhèse.md
+      - FPGA: ser1/fpga.md
+      - VHDL: ser1/vhdl.md
+      - Simulation VHDL: ser1/simulation.md
+      - Synthèse et Implémentation: ser1/synthese.md
+      - Affectation des broches: ser1/broches.md
   - "Syst. Emb. Reconfig. 2":
       - Introduction SoC-FPGA: ser2/intro.md
       - Interfaçage SoC et FPGA: ser2/interfacage.md
       - Plateform Designer: ser2/plateform_designer.md
       - CPUlator: ser2/cpulator.md
-
+      
 extra_css:
   - css/custom.css
 
