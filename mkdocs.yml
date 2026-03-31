@@ -10,7 +10,7 @@ theme:
   logo: material/cpu
   icon:
     logo: material/cpu
-    favicon: material/cpu  # <--- Cette ligne modifie l'icône de l'onglet Firefox
+    favicon: material/cpu
   features:
     - navigation.tabs      
     - navigation.sections  
