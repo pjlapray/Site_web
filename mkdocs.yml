@@ -37,16 +37,13 @@ theme:
 nav:
   - Accueil: index.md
   - "Electronique Numérique":
-      - Introduction: cours/intro_elec.md
-      - Logique Combinatoire: cours/logique.md
+      - Introduction: en/intro.md
+      - Logique Combinatoire: en/logique_combinatoire.md
+      - Logique Séquentielle: en/logique_sequentielle.md
   - "Syst. Emb. Reconfig. 1":
-      - Introduction VHDL: cours/vhdl_intro.md
-      - Entités et Architectures: cours/vhdl_base.md
-      - TP : Compteur 8 bits: tp/tp_compteur.md
+      - Introduction VHDL: ser1/intro.md
   - "Syst. Emb. Reconfig. 2":
-      - Architectures Avancées: cours/avance.md
-      - Interfaces et Protocoles: cours/interfaces.md
-      - Projet Final: tp/projet.md
+      - Introduction SoC-FPGA: ser2/intro.md
 
 extra_css:
   - css/custom.css
