@@ -7,19 +7,15 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: fr
-  
-  # Configuration des images (doivent être dans docs/assets/)
   logo: assets/logo.png
   favicon: assets/favicon.png
-  
   features:
-    - navigation.tabs      # Active les onglets horizontaux
-    - navigation.sections  # Titres de sections à gauche
-    - navigation.expand    # Menu de gauche ouvert par défaut
-    - navigation.top       # Bouton de retour en haut
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
     - search.suggest
-    - content.code.copy    # Bouton de copie pour le code VHDL
-    
+    - content.code.copy
   palette:
     - scheme: default
       primary: white
@@ -33,12 +29,10 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Mode clair
-
   font:
     text: Roboto
     code: Roboto Mono
 
-# Définition de la navigation (vos 3 onglets)
 nav:
   - Accueil: index.md
   - "Electronique Numérique":
@@ -55,13 +49,12 @@ extra_css:
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
-      
+
 markdown_extensions:
-    - attr_list
-  - md_in_html      # <--- C'EST CETTE LIGNE QUI MANQUE SUREMENT
-  - pymdownx.superfences
-  - pymdownx.details
+  - attr_list
+  - md_in_html
   - admonition
+  - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
@@ -73,4 +66,3 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:pymdownx.emoji.twemoji
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
-      
