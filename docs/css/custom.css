@@ -18,7 +18,7 @@
 /* On augmente ici la taille à 4.5rem pour qu'il soit bien visible */
 .md-header__button.md-logo img, 
 .md-logo img {
-    height: 4.5rem !important;
+    height: 2.5rem !important;
     width: auto !important;
     display: block;
 }
@@ -35,7 +35,7 @@
 @media screen and (max-width: 76.25em) {
     .md-header__button.md-logo img,
     .md-logo img {
-        height: 3.5rem !important;
+        height: 2.5rem !important;
     }
 }
 
