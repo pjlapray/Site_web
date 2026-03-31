@@ -2,7 +2,7 @@
 
 Ceci est le site web pédagogique de **Pierre-Jean Lapray**, enseignant-chercheur à l'**ENSISA**.
 
-Vous trouverez ici des ressources, des exemples et des bonnes pratiques pour les modules d'enseignement de la spécialité Automatique et Systèmes Embarqués.
+Vous trouverez ici des exemples et des bonnes pratiques pour mes modules d'enseignement de la spécialité Automatique et Systèmes Embarqués.
 Ceci vient en complément des ressources fournies sur Moodle.
 
 ---
