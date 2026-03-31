@@ -8,11 +8,12 @@ theme:
   name: material
   language: fr
   features:
-    - navigation.sections    # Garde les titres de sections en gras
-    - navigation.expand      # Optionnel : affiche tout par défaut
-    - navigation.top
+    - navigation.tabs      # Active le menu horizontal en haut
+    - navigation.sections  # Titres de sections à gauche
+    - navigation.expand    # Déroule le menu par défaut
+    - navigation.top       # Bouton retour en haut
     - search.suggest
-    - content.code.copy
+    - content.code.copy    # Bouton copier pour le code VHDL
     
   palette:
     - scheme: default
@@ -32,19 +33,23 @@ theme:
     text: Roboto
     code: Roboto Mono
 
-# Définition de la structure des menus avec sous-parties
+# Définition des onglets du haut et de leurs pages
 nav:
   - Accueil: index.md
-  - "COURS THÉORIQUES":
-      - Introduction: cours/intro.md
-  - "TRAVAUX PRATIQUES":
-      - Introduction: tp/intro.md
-  - Ressources:
-      - Guide Diagnostic: tuto/intro.md
+  - "Electronique Numérique":
+      - Introduction: cours/intro_elec.md
+      - Logique Combinatoire: cours/logique.md
+  - "Syst. Emb. Reconfig. 1":
+      - Introduction VHDL: cours/vhdl_intro.md
+      - Entités et Architectures: cours/vhdl_base.md
+      - TP : Compteur 8 bits: tp/tp_compteur.md
+  - "Syst. Emb. Reconfig. 2":
+      - Architectures Avancées: cours/avance.md
+      - Interfaces et Protocoles: cours/interfaces.md
+      - Projet Final: tp/projet.md
 
 extra_css:
-  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css
-  - css/custom.css  # On va créer ce fichier pour masquer le nom
+  - css/custom.css
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML

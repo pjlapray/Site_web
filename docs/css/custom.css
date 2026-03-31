@@ -1,9 +1,15 @@
-/* Masquer le titre du site dans la barre latérale de navigation */
+/* Masquer le titre redondant dans la barre de navigation de gauche */
 .md-nav__title[for="__drawer"] {
     display: none;
 }
 
-/* Optionnel : Ajuster la marge du haut pour que le menu commence plus haut */
+/* Ajuster l'espacement pour un rendu plus compact */
 .md-nav__list {
     margin-top: 0;
+}
+
+/* Optionnel : Améliorer la visibilité des onglets actifs en haut */
+.md-tabs__link--active {
+    font-weight: bold;
+    color: var(--md-primary-fg-color);
 }
