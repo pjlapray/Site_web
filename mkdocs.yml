@@ -7,39 +7,38 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: fr
-  logo: material/cpu
-  icon:
-    logo: material/cpu
-    favicon: material/cpu
+  
+  # Configuration des images (doivent être dans docs/assets/)
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  
   features:
-    - navigation.tabs      
-    - navigation.sections  
-    - navigation.expand    
-    - navigation.top       
+    - navigation.tabs      # Active les onglets horizontaux
+    - navigation.sections  # Titres de sections à gauche
+    - navigation.expand    # Menu de gauche ouvert par défaut
+    - navigation.top       # Bouton de retour en haut
     - search.suggest
-    - content.code.copy    
+    - content.code.copy    # Bouton de copie pour le code VHDL
     
   palette:
-    # Configuration pour le Mode Clair
     - scheme: default
       primary: white
       accent: blue
       toggle:
         icon: material/brightness-7
-        name: Passer au mode sombre
-    # Configuration pour le Mode Sombre
+        name: Mode sombre
     - scheme: slate
       primary: grey
       accent: blue
       toggle:
         icon: material/brightness-4
-        name: Passer au mode clair
+        name: Mode clair
 
   font:
     text: Roboto
     code: Roboto Mono
 
-# Structure de navigation
+# Définition de la navigation (vos 3 onglets)
 nav:
   - Accueil: index.md
   - "Electronique Numérique":
