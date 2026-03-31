@@ -57,9 +57,11 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
       
 markdown_extensions:
-  - attr_list
-  - admonition
+    - attr_list
+  - md_in_html      # <--- C'EST CETTE LIGNE QUI MANQUE SUREMENT
+  - pymdownx.superfences
   - pymdownx.details
+  - admonition
   - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
