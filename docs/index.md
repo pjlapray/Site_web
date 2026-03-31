@@ -11,17 +11,17 @@ Ceci vient en complément des ressources fournies sur Moodle.
 
 <div class="grid cards" markdown>
 
--   :material-chip: **Électronique Numérique**
+-   :material-gate-and: **Électronique Numérique**
     ---
     Bases de la logique combinatoire et séquentielle pour la 1ère année.
     [:octicons-arrow-right-24: Accéder au cours](en/intro.md)
 
--   :material-cpu-64-bit: **Systèmes Embarqués Reconfigurables I**
+-   :material-chip: **Systèmes Embarqués Reconfigurables I**
     ---
     Introduction au langage VHDL et à la conception sur FPGA (1ère année).
     [:octicons-arrow-right-24: Accéder au cours](ser1/intro.md)
 
--   :material-layers-triple: **Systèmes Embarqués Reconfigurables II**
+-   :material-expansion-card-variant: **Systèmes Embarqués Reconfigurables II**
     ---
     Conception avancée : Blocs IP, architectures SoC et bus de communication (2ème année).
     [:octicons-arrow-right-24: Accéder au cours](ser2/intro.md)
