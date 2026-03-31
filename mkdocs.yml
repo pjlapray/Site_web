@@ -1,9 +1,19 @@
-site_name: De l'Électronique Numérique au Système Embarqué Reconfigurable
+site_name: Architecture Numérique et VHDL
+site_url: https://pjlapray.github.io/Site_web/
+repo_url: https://github.com/pjlapray/Site_web
+repo_name: pjlapray/Site_web
+edit_uri: edit/main/docs/
 
 theme:
   name: material
   language: fr
-  # Couleurs très claires pour imiter le style "Minimal" (Blanc et Gris)
+  features:
+    - navigation.sections    # Garde les titres de sections en gras
+    - navigation.expand      # Optionnel : affiche tout par défaut
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+    
   palette:
     - scheme: default
       primary: white
@@ -18,21 +28,26 @@ theme:
         icon: material/brightness-4
         name: Mode clair
 
-  features:
-    # On désactive presque tout pour l'épurer au maximum
-    - navigation.sections
-    - navigation.top
-    - search.suggest
-    - content.code.copy
-
-  # Police Roboto (utilisée par le style orderedlist)
   font:
     text: Roboto
     code: Roboto Mono
 
-# Personnalisation pour supprimer les ombres et les barres lourdes
+# Définition de la structure des menus avec sous-parties
+nav:
+  - Accueil: index.md
+  - "COURS THÉORIQUES":
+      - Introduction: cours/intro.md
+      - Architecture RISC-V: cours/riscv.md
+      - Logique Combinatoire: cours/logique.md
+  - "TRAVAUX PRATIQUES":
+      - TP1 : Prise en main: tp/tp1.md
+      - TP2 : Compteurs VHDL: tp/tp2.md
+  - Ressources:
+      - Guide Diagnostic: diagnostic_reload.md
+
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css
+  - css/custom.css  # On va créer ce fichier pour masquer le nom
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
