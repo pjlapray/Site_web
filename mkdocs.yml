@@ -1,7 +1,7 @@
 site_name: Architecture Numérique et VHDL
 site_url: https://pjlapray.github.io/Site_web/
 repo_url: https://github.com/pjlapray/Site_web
-repo_name: pjlapray/Site_web
+repo_name: "P-J. Lapray"
 edit_uri: edit/main/docs/
 
 theme:
