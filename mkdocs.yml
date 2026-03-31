@@ -1,4 +1,4 @@
-site_name: Systèmes embarqués Reconfigurables
+site_name: Systèmes Embarqués Reconfigurables
 site_url: https://pjlapray.github.io/Site_web/
 repo_url: https://github.com/pjlapray/Site_web
 repo_name: "P-J. Lapray"
@@ -38,11 +38,19 @@ nav:
   - "Electronique Numérique":
       - Introduction: en/intro.md
       - Logique Combinatoire: en/logique_combinatoire.md
+          - Tableau de Karnaugh: en/tableau_de_karnagh.md
       - Logique Séquentielle: en/logique_sequentielle.md
   - "Syst. Emb. Reconfig. 1":
-      - Introduction VHDL: ser1/intro.md
+      - FPGA : ser1/fpga.md
+      - VHDL : ser1/vhdl.md
+      - Simulation VHDL : ser1/simulation.md
+      - Synthèse et Implémentation : ser1/sytnhèse.md
+      - Affectation des broches : ser1/sytnhèse.md
   - "Syst. Emb. Reconfig. 2":
       - Introduction SoC-FPGA: ser2/intro.md
+      - Interfaçage SoC et FPGA: ser2/interfacage.md
+      - Plateform Designer: ser2/plateform_designer.md
+      - CPUlator: ser2/cpulator.md
 
 extra_css:
   - css/custom.css

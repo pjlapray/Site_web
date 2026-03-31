@@ -13,17 +13,17 @@ Ceci vient en complément des ressources fournies sur Moodle.
 
 -   :material-gate-nor: **Électronique Numérique**
     ---
-    Bases de la logique combinatoire et séquentielle pour la 1ère année.
+    Bases de la logique combinatoire et séquentielle (1ère année - S5).
     [:octicons-arrow-right-24: Accéder au cours](en/intro.md)
 
 -   :material-chip: **Systèmes Embarqués Reconfigurables I**
     ---
-    Introduction au langage VHDL et à la conception sur FPGA (1ère année).
+    Introduction au langage VHDL et à la conception sur FPGA (2ème année - S7).
     [:octicons-arrow-right-24: Accéder au cours](ser1/intro.md)
 
--   :material-cpu-64-bit: **Systèmes Embarqués Reconfigurables II**
+-   :material-cpu-32-bit: **Systèmes Embarqués Reconfigurables II**
     ---
-    Conception avancée : Blocs IP, architectures SoC et bus de communication (2ème année).
+    Conception avancée : Blocs IP, architectures SoC et bus de communication (2ème année - S8).
     [:octicons-arrow-right-24: Accéder au cours](ser2/intro.md)
 
 </div>
@@ -31,4 +31,4 @@ Ceci vient en complément des ressources fournies sur Moodle.
 ---
 
 !!! info "Objectifs pédagogiques"
-    Ce portail centralise les supports de cours, les énoncés de travaux pratiques et les guides méthodologiques pour accompagner les étudiants tout au long de leur cursus à l'ENSISA.
+    Ce portail centralise les exemples et les guides méthodologiques pour accompagner les étudiants pendant les TD et TP.
