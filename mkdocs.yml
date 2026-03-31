@@ -1,0 +1,50 @@
+site_name: Architecture Numérique et VHDL
+
+theme:
+  name: material
+  language: fr
+  # Couleurs très claires pour imiter le style "Minimal" (Blanc et Gris)
+  palette:
+    - scheme: default
+      primary: white
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Mode sombre
+    - scheme: slate
+      primary: grey
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Mode clair
+
+  features:
+    # On désactive presque tout pour l'épurer au maximum
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+
+  # Police Roboto (utilisée par le style orderedlist)
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# Personnalisation pour supprimer les ombres et les barres lourdes
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.details
+  - toc:
+      permalink: true
