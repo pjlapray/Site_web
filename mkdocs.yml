@@ -7,13 +7,18 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: fr
+  # LE LOGO SE PLACE ICI (sous theme)
+  logo: material/cpu 
+  icon:
+    logo: material/memory # Une puce mémoire/processeur
+  
   features:
-    - navigation.tabs      # Active le menu horizontal en haut
-    - navigation.sections  # Titres de sections à gauche
-    - navigation.expand    # Déroule le menu par défaut
-    - navigation.top       # Bouton retour en haut
+    - navigation.tabs      
+    - navigation.sections  
+    - navigation.expand    
+    - navigation.top       
     - search.suggest
-    - content.code.copy    # Bouton copier pour le code VHDL
+    - content.code.copy    
     
   palette:
     - scheme: default
@@ -33,7 +38,7 @@ theme:
     text: Roboto
     code: Roboto Mono
 
-# Définition des onglets du haut et de leurs pages
+# Structure de navigation
 nav:
   - Accueil: index.md
   - "Electronique Numérique":
