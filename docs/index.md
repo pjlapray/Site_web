@@ -11,41 +11,22 @@ Ceci vient en complément des ressources fournies sur Moodle.
 
 <div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
-
+-   :material-chip: **Électronique Numérique**
     ---
+    Bases de la logique combinatoire et séquentielle pour la 1ère année.
+    [:octicons-arrow-right-24: Accéder au cours](en/intro.md)
 
-    Install [`mkdocs-material`](#) with [`pip`](#) and get up
-    and running in minutes
-
-    [:octicons-arrow-right-24: Getting started](#)
-
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
-
+-   :material-cpu: **Systèmes Embarqués Reconfigurables I**
     ---
+    Introduction au langage VHDL et à la conception sur FPGA (1ère année).
+    [:octicons-arrow-right-24: Accéder au cours](ser1/intro.md)
 
-    Focus on your content and generate a responsive and searchable static site
-
-    [:octicons-arrow-right-24: Reference](#)
-
--   :material-format-font:{ .lg .middle } __Made to measure__
-
+-   :material-layers-triple: **Systèmes Embarqués Reconfigurables II**
     ---
-
-    Change the colors, fonts, language, icons, logo and more with a few lines
-
-    [:octicons-arrow-right-24: Customization](#)
-
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
-
-    ---
-
-    Material for MkDocs is licensed under MIT and available on [GitHub]
-
-    [:octicons-arrow-right-24: License](#)
+    Conception avancée : Blocs IP, architectures SoC et bus de communication (2ème année).
+    [:octicons-arrow-right-24: Accéder au cours](ser2/intro.md)
 
 </div>
-
 
 ---
 
