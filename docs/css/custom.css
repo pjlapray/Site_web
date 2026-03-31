@@ -15,9 +15,12 @@
 }
 
 /* --- AGRANDISSEMENT DU LOGO --- */
+/* Utilisation d'un sélecteur plus large pour garantir l'affichage sur toutes les pages */
+.md-header__button.md-logo img, 
 .md-logo img {
-    height: 3rem; /* Taille par défaut environ 1.2rem, on passe à 3rem */
-    width: auto;
+    height: 3.5rem !important; /* Augmentation légère et force l'application */
+    width: auto !important;
+    display: block;
 }
 
 /* Ajustement de la barre de navigation pour accueillir un logo plus grand */
@@ -25,4 +28,13 @@
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
     padding: 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Correction spécifique pour les terminaux mobiles et tablettes */
+@media screen and (max-width: 76.25em) {
+    .md-logo img {
+        height: 2.5rem !important;
+    }
 }
