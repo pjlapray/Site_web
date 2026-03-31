@@ -3,23 +3,25 @@
 Ceci est le site web pédagogique de **Pierre-Jean Lapray**, enseignant-chercheur à l'**ENSISA**.
 
 Vous trouverez ici des ressources, des exemples et des bonnes pratiques pour les modules d'enseignement de la spécialité Automatique et Systèmes Embarqués.
+Ceci vient en complément des ressources fournies sur Moodle.
+---
 
 ### 📚 Modules d'enseignement
 
 <div class="grid cards" markdown>
 
-* ## :material-chip: **Électronique Numérique**
-
+-   :material-chip: **Électronique Numérique**
+    ---
     Bases de la logique combinatoire et séquentielle pour la 1ère année.
     [:octicons-arrow-right-24: Accéder au cours](en/intro.md)
 
-* ## :material-cpu: **Systèmes Embarqués Reconfigurables I**
-
+-   :material-cpu: **Systèmes Embarqués Reconfigurables I**
+    ---
     Introduction au langage VHDL et à la conception sur FPGA (1ère année).
     [:octicons-arrow-right-24: Accéder au cours](ser1/intro.md)
 
-* ## :material-layers-triple: **Systèmes Embarqués Reconfigurables II**
-
+-   :material-layers-triple: **Systèmes Embarqués Reconfigurables II**
+    ---
     Conception avancée : Blocs IP, architectures SoC et bus de communication (2ème année).
     [:octicons-arrow-right-24: Accéder au cours](ser2/intro.md)
 
