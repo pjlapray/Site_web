@@ -27,3 +27,5 @@ begin
 						end process;
 end rtl; 
 ```
+
+<iframe src="https://edaplayground.com/x/ejkp" width="100%" height="500px" frameborder="0"></iframe>
