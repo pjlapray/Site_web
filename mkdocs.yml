@@ -6,13 +6,16 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides    # <--- AJOUTEZ CETTE LIGNE
   language: fr
   logo: assets/logo.png
   favicon: assets/favicon.png
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
+    - navigation.tabs          # Garde les onglets en haut
+    - navigation.tabs.sticky   # Optionnel : fixe les onglets au défilement
+    #- navigation.sections      # RECOMMANDÉ : Groupe les éléments par sections dans le menu gauche
+    #- navigation.expand        # Affiche toute la hiérarchie (retraits) par défaut
+    - navigation.path          # Affiche le chemin de navigation (fil d'Ariane)
     - navigation.top
     - search.suggest
     - content.code.copy
@@ -42,13 +45,13 @@ nav:
           - Tableau de Karnaugh: en/tableau_de_karnagh.md
       - Logique Séquentielle: en/logique_sequentielle.md
   - "Syst. Emb. Reconfig. 1":
-      - FPGA: ser1/fpga.md
+      - FPGA : ser1/fpga.md
       - VHDL: ser1/vhdl.md
       - Simulation VHDL: ser1/simulation.md
       - Synthèse et Implémentation: ser1/synthese.md
       - Affectation des broches: ser1/broches.md
   - "Syst. Emb. Reconfig. 2":
-      - Introduction SoC-FPGA: ser2/intro.md
+      - SoC-FPGA: ser2/intro.md
       - Interfaçage SoC et FPGA: ser2/interfacage.md
       - Plateform Designer: ser2/plateform_designer.md
       - CPUlator: ser2/cpulator.md
@@ -75,3 +78,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      
+extra:
+  generator: false  # <--- SUPPRIME la mention "Made with Material for MkDocs"
