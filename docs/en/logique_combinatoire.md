@@ -8,7 +8,7 @@ L'additionneur complet (Full Adder) prend en entrée deux bits ($A$ et $B$) ains
 
 ## Expérimentation et Visualisation
 
-!!! info "Objectif pédagogique"
+!!! info "Objectif pédagogique" 
     Explorez les deux facettes de la conception : le schéma logique pur (généré ici par WaveDrom) et sa mise en œuvre technologique sur platine d'essai.
 
 === ":material-sitemap: Schéma Logique (WaveDrom)"
