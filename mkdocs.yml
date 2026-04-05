@@ -63,9 +63,9 @@ extra_css:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
-  - https://cdn.jsdelivr.net/npm/wavedrom@2.1.2/wavedrom.unpkg.js
-  - https://wavedrom.com/skins/default.js
-  - js/init_wavedrom.js  # <--- Ce fichier local fait le pont
+  - https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js
+  - js/wavedrom_loader.js
 
 markdown_extensions:
   - attr_list
@@ -74,11 +74,7 @@ markdown_extensions:
   - pymdownx.details
   - markdown_wavedrom
   - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: wavedrom
-          class: wavedrom
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
       pygments_lang_class: true
