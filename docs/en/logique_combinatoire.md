@@ -7,9 +7,7 @@
 L'additionneur complet (Full Adder) prend en entrée deux bits ($A$ et $B$) ainsi qu'une retenue d'entrée ($C_{in}$), et produit une somme ($S$) et une retenue de sortie ($C_{out}$).
 
 ## Expérimentation et Visualisation
-wavedrom (
-    { signal: [{ name: "Alfa", wave: "01.zx=ud.23.456789" }] }
-)
+
 
 !!! info "Objectif pédagogique" 
     Explorez les deux facettes de la conception : le schéma logique pur (généré ici par WaveDrom) et sa mise en œuvre technologique sur platine d'essai.
@@ -21,7 +19,10 @@ wavedrom (
     * **Retenue ($C_{out}$)** : Logique combinatoire des entrées.
 
     wavedrom (
-    { signal: [{ name: "Alfa", wave: "01.zx=ud.23.456789" }] }
+    { "assign": [
+        ["S", ["^", "A", "B", "Cin"]],
+        ["Cout", ["|", ["&", "A", "B"], ["&", "B", "Cin"], ["&", "A", "Cin"]]]
+    ]}
 	)
 
     
