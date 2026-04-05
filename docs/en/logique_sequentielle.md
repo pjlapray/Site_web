@@ -11,7 +11,7 @@ Les briques de base de la logique séquentielle sont les **bascules** (latches e
 
     <div class="circuit-container" style="text-align: center; margin: 20px 0;">
         <iframe 
-            src="https://circuitverse.org/simulator/embed/elec-num-partie-3-9cc032fe-5536-4bd0-9568-119b1518c853?theme=night-sky&display_title=true&clock_time=false&fullscreen=false&zoom_in_out=true" 
+            src="https://circuitverse.org/simulator/embed/elec-num-partie-3-9cc032fe-5536-4bd0-9568-119b1518c853?theme=lite-born-spring&display_title=true&clock_time=false&fullscreen=false&zoom_in_out=true" 
             style="border: 2px solid #2c3e50; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" 
             name="myiframe" 
             id="projectPreview" 
@@ -24,9 +24,12 @@ Les briques de base de la logique séquentielle sont les **bascules** (latches e
     </div>
 
     [:material-fullscreen: Étudier le circuit en plein écran](https://circuitverse.org/simulator/edit/elec-num-partie-3-9cc032fe-5536-4bd0-9568-119b1518c853){ .md-button .md-button--primary }
-    [:material-help-circle: Guide de manipulation](#){ .md-button }
 
 ### Points clés à observer :
 * **Bascule RS :** Notez l'état interdit ($R=1, S=1$).
 * **Bascule D :** Observez comment la donnée est "verrouillée".
 * **Horloge (Clock) :** Identifiez si le changement se fait sur le front montant ou descendant.
+
+    <div class="circuit-container" style="text-align: center; margin: 20px 0;">
+		<iframe width="560" height="350" src="https://www.tinkercad.com/embed/cu7zEMnK42q?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    </div>
