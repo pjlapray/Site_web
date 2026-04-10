@@ -26,6 +26,11 @@ Ceci vient en complément du Moodle.
     Conception avancée : IP, SoC et bus (2ème année - S8).
     [:octicons-arrow-right-24: Accéder aux ressources](ser2/soc_fpga.md)
 
+-   :material-wall: **Immersion**
+    ---
+    Découverte éléctronique, automatique et micro-informatique (1ère année - S5).
+    [:octicons-arrow-right-24: Accéder aux ressources](immersion/index.md)
+
 </div>
 
 ---
