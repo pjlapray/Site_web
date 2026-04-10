@@ -67,8 +67,8 @@ Le montage suivant sous TinkerCad permet de tester manuellement le registre à d
 
 ---
 
-wavedrom (
-	{ "signal": [
+wavedrom(
+{ "signal": [
   { "name": "SCK (Horloge)", "wave": "p........." },
   { "name": "SER (Donnée)",    "wave": "010110....", "data": ["D0", "D1", "D2", "D3"] },
   {},

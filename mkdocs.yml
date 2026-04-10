@@ -37,28 +37,29 @@ theme:
 nav:
   - Accueil: index.md
   - "Électronique Numérique":
-      - Généralités: en/generalites.md
-      - Logique Combinatoire: 
-          - Composants Logiques Fondamentaux: en/logique_combinatoire.md
-          - Tableau de Karnaugh: en/tableau_de_karnaugh.md
-      - Logique Séquentielle: 
-          - Composants Logiques Fondamentaux: en/logique_sequentielle.md
-          - Métastabilité: en/metastabilite.md
+      - 1. Généralités: en/generalites.md
+      - 2. Logique Combinatoire: 
+          - 2.1 Composants Logiques Fondamentaux: en/logique_combinatoire.md
+          - 2.2 Tableau de Karnaugh: en/tableau_de_karnaugh.md
+      - 3. Logique Séquentielle: 
+          - 3.1 Composants Logiques Fondamentaux: en/logique_sequentielle.md
+          - 3.2 Métastabilité: en/metastabilite.md
 
   - "Syst. Emb. Reconfig. 1":
-      - FPGA : ser1/fpga.md
-      - VHDL: ser1/vhdl.md
-      - Simulation VHDL: ser1/simulation.md
-      - Synthèse et Implémentation:
-          - Synthèse: ser1/synthese.md
-          - Affectation des broches: ser1/brochage.md
-          - Implémentation: ser1/implementation.md
-          - Configuration du FPGA: ser1/configuration.md
+      - 1. FPGA : ser1/fpga.md
+      - 2. VHDL: ser1/vhdl.md
+      - 3. Simulation VHDL: ser1/simulation.md
+      - 4. Synthèse et Implémentation:
+          - 4.1 Synthèse: ser1/synthese.md
+          - 4.2 Affectation des broches: ser1/brochage.md
+          - 4.3 Implémentation: ser1/implementation.md
+          - 4.4 Configuration du FPGA: ser1/configuration.md
+
   - "Syst. Emb. Reconfig. 2":
-      - SoC-FPGA: ser2/soc_fpga.md
-      - Interfaçage SoC et FPGA: ser2/interfacage.md
-      - Platform Designer: ser2/platform_designer.md
-      - CPUlator: ser2/cpulator.md
+      - 1. SoC-FPGA: ser2/soc_fpga.md
+      - 2. Interfaçage SoC et FPGA: ser2/interfacage.md
+      - 3. Platform Designer: ser2/platform_designer.md
+      - 4. CPUlator: ser2/cpulator.md
 
 extra_css:
   - css/custom.css
@@ -75,13 +76,8 @@ markdown_extensions:
   - md_in_html
   - admonition
   - pymdownx.details
-  - markdown_wavedrom
   - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: wavedrom
-          class: wavedrom
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
       pygments_lang_class: true
@@ -94,6 +90,7 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
+  - markdown_wavedrom
 
 extra:
   generator: false
