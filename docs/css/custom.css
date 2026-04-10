@@ -39,6 +39,7 @@
     }
 }
 
+
 /* --- STYLE DES LIENS DE TITRE (PERMALINKS) --- */
 .md-content__inner h1:hover .headerlink,
 .md-content__inner h2:hover .headerlink,
@@ -75,4 +76,25 @@
 .WaveDrom svg, .wavedrom svg {
     margin-left: auto !important;
     margin-right: auto !important;
+}
+
+/* Numérotation automatique du menu de navigation gauche */
+.md-nav__list {
+  counter-reset: section;
+}
+
+.md-nav__item {
+  counter-increment: section;
+}
+
+.md-nav__link::before {
+  content: counters(section, ".") " ";
+  font-weight: bold;
+  margin-right: 0.5em;
+  color: var(--md-typeset-color);
+}
+
+/* Optionnel : cacher la numérotation pour le titre principal du menu */
+.md-nav--primary > .md-nav__title::before {
+  content: none;
 }
