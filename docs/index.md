@@ -14,17 +14,17 @@ Ceci vient en complément du Moodle.
 -   :material-gate-nor: **Électronique Numérique**
     ---
     Bases de la logique combinatoire et séquentielle (1ère année - S5).
-    [:octicons-arrow-right-24: Accéder au cours](en/generalites.md)
+    [:octicons-arrow-right-24: Accéder aux ressources](en/generalites.md)
 
 -   :material-chip: **Systèmes Embarqués Reconfigurables I**
     ---
     Introduction au langage VHDL et à la conception sur FPGA (2ème année - S7).
-    [:octicons-arrow-right-24: Accéder au cours](ser1/fpga.md)
+    [:octicons-arrow-right-24: Accéder aux ressources](ser1/fpga.md)
 
 -   :material-cpu-32-bit: **Systèmes Embarqués Reconfigurables II**
     ---
     Conception avancée : IP, SoC et bus (2ème année - S8).
-    [:octicons-arrow-right-24: Accéder au cours](ser2/soc_fpga.md)
+    [:octicons-arrow-right-24: Accéder aux ressources](ser2/soc_fpga.md)
 
 </div>
 

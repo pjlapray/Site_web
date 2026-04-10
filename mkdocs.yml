@@ -41,7 +41,10 @@ nav:
       - Logique Combinatoire: 
           - Composants Logiques Fondamentaux: en/logique_combinatoire.md
           - Tableau de Karnaugh: en/tableau_de_karnaugh.md
-      - Logique Séquentielle: en/logique_sequentielle.md
+      - Logique Séquentielle: 
+          - Composants Logiques Fondamentaux: en/logique_sequentielle.md
+          - Métastabilité: en/metastabilite.md
+
   - "Syst. Emb. Reconfig. 1":
       - FPGA : ser1/fpga.md
       - VHDL: ser1/vhdl.md
