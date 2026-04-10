@@ -1,33 +1,40 @@
-# Informations générales du projet
-site_name: Systèmes Embarqués Reconfigurables  # Nom affiché dans l'onglet du navigateur
-site_url: https://pjlapray.github.io/Site_web/ # URL finale du site déployé
-repo_url: https://github.com/pjlapray/Site_web # Lien vers ton dépôt source
-repo_name: "P-J. Lapray"                       # Nom affiché pour le bouton GitHub
-edit_uri: edit/main/docs/                       # Permet aux lecteurs de proposer des modifs via GitHub
+site_name: Systèmes Embarqués Reconfigurables
+site_url: https://pjlapray.github.io/Site_web/
+repo_url: https://github.com/pjlapray/Site_web
+repo_name: "P-J. Lapray"
+edit_uri: edit/main/docs/
 
-# Configuration de l'apparence (Thème Material)
 theme:
   name: material
-  custom_dir: overrides       # Dossier contenant tes modifs HTML spécifiques (ex: footer)
-  language: fr                # Traduit les boutons (Next, Previous, Search) en français
-  logo: assets/logo.png       # Chemin de l'image du logo (en haut à gauche)
-  favicon: assets/favicon.png # Petite icône affichée dans l'onglet du navigateur
+  custom_dir: overrides
+  language: fr
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   features:
-    - navigation.tabs         # Menu principal sous forme d'onglets horizontaux en haut
-    - navigation.tabs.sticky  # Garde les onglets visibles même quand on scroll
-    - navigation.path         # Affiche le fil d'ariane (Breadcrumbs)
-    - navigation.top          # Ajoute un bouton "Retour en haut de page"
-    - search.suggest          # Suggestions automatiques dans la barre de recherche
-    - content.code.copy       # Ajoute un bouton "Copier" sur tous les blocs de code
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+    - navigation.pruning 
+    - navigation.expand
+    # NOUVELLES FONCTIONS INTÉRESSANTES :
+    - navigation.sections      # Regroupe visuellement les éléments du menu de gauche
+    - navigation.indexes       # Permet de cliquer sur le titre d'une section pour aller à sa page d'accueil
+    - navigation.tracking      # Met à jour l'URL selon le scroll pour faciliter le partage
+    - toc.follow               # La table des matières à droite suit le défilement
+    - content.tooltips         # Affiche des info-bulles pour les abréviations ou glossaires
+    - search.highlight         # Surligne les termes recherchés dans les pages
+    - search.share             # Permet de partager un lien de recherche
+
   palette:
-    # Option 1 : Mode clair
     - scheme: default
-      primary: white          # Couleur de la barre de navigation
-      accent: blue            # Couleur des liens et boutons
+      primary: white
+      accent: blue
       toggle:
         icon: material/brightness-7
         name: Mode sombre
-    # Option 2 : Mode sombre
     - scheme: slate
       primary: grey
       accent: blue
@@ -35,56 +42,65 @@ theme:
         icon: material/brightness-4
         name: Mode clair
   font:
-    text: Roboto              # Police pour le texte général
-    code: Roboto Mono         # Police pour les blocs de code (VHDL, C, etc.)
+    text: Roboto
+    code: Roboto Mono
 
-# Structure du menu de navigation
 nav:
   - Accueil: index.md
   - "Électronique Numérique":
-      - 1. Généralités: en/generalites.md
+      - 1. Généralités: 
+          - Logique Combinatoire vs Séquentielle: en/generalites.md
       - 2. Logique Combinatoire: 
-          - 2.1 Composants Logiques Fondamentaux: en/logique_combinatoire.md
-          - 2.2 Tableau de Karnaugh: en/tableau_de_karnaugh.md
+          - Composants Logiques Fondamentaux: en/logique_combinatoire.md
+          - Tableau de Karnaugh: en/tableau_de_karnaugh.md
       - 3. Logique Séquentielle: 
-          - 3.1 Composants Logiques Fondamentaux: en/logique_sequentielle.md
-          - 3.2 Métastabilité: en/metastabilite.md
-  # (Même logique de numérotation manuelle pour les autres onglets...)
+          - Composants Logiques Fondamentaux: en/logique_sequentielle.md
+          - Métastabilité: en/metastabilite.md
 
-# Fichiers de styles personnalisés
+  - "Syst. Emb. Reconfig. 1":
+      - 1. FPGA : ser1/fpga.md
+      - 2. VHDL: ser1/vhdl.md
+      - 3. Simulation VHDL: ser1/simulation.md
+      - 4. Synthèse et Implémentation:
+          - Synthèse: ser1/synthese.md
+          - Affectation des broches: ser1/brochage.md
+          - Implémentation: ser1/implementation.md
+          - Configuration du FPGA: ser1/configuration.md
+
+  - "Syst. Emb. Reconfig. 2":
+      - 1. SoC-FPGA: ser2/soc_fpga.md
+      - 2. Interfaçage SoC et FPGA: ser2/interfacage.md
+      - 3. Platform Designer: ser2/platform_designer.md
+      - 4. CPUlator: ser2/cpulator.md
+
 extra_css:
-  - css/custom.css            # Ton fichier pour la taille du logo, correctifs WaveDrom, etc.
+  - css/custom.css
 
-# Scripts externes chargés par le navigateur
 extra_javascript:
-  # Rendu des formules mathématiques (LaTeX)
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
-  # NOTE : Si tu utilises l'extension Python markdown_wavedrom, tu peux supprimer les lignes ci-dessous
   - https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js
   - js/wavedrom_loader.js
-
-# Extensions de rendu Markdown (Logiciel de transformation)
+  
 markdown_extensions:
-  - attr_list                 # Permet d'ajouter des classes CSS aux images/textes : { .ma-classe }
-  - md_in_html                # Permet d'écrire du Markdown à l'intérieur de balises HTML <div>
-  - admonition                # Support des blocs d'info : !!! info "Titre"
-  - pymdownx.details          # Support des blocs repliables : ??? note "Cliquez ici"
-  - pymdownx.superfences      # Indispensable pour imbriquer du code dans des listes ou admonitions
-  - pymdownx.highlight:       # Coloration syntaxique du code
-      anchor_linenums: true   # Permet de créer des liens vers une ligne précise
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
       pygments_lang_class: true
-  - toc:                      # Table des matières (à droite)
-      permalink: true         # Ajoute l'icône 🔗 à côté de chaque titre
-  - pymdownx.arithmatex:      # Lien entre ton Markdown et MathJax (équations)
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
       generic: true
-  - pymdownx.emoji:           # Support des emojis :smile:
+  - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.tabbed:          # Support des onglets de contenu : === "VHDL"
+  - pymdownx.tabbed:
       alternate_style: true
-  - markdown_wavedrom         # Extension Python pour générer les chronogrammes au build (serveur)
+  - markdown_wavedrom
 
-# Paramètres additionnels
 extra:
-  generator: false            # Retire la mention "Made with MkDocs" en bas de page
+  generator: false
