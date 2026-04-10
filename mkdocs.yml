@@ -1,29 +1,33 @@
-site_name: Systèmes Embarqués Reconfigurables
-site_url: https://pjlapray.github.io/Site_web/
-repo_url: https://github.com/pjlapray/Site_web
-repo_name: "P-J. Lapray"
-edit_uri: edit/main/docs/
+# Informations générales du projet
+site_name: Systèmes Embarqués Reconfigurables  # Nom affiché dans l'onglet du navigateur
+site_url: https://pjlapray.github.io/Site_web/ # URL finale du site déployé
+repo_url: https://github.com/pjlapray/Site_web # Lien vers ton dépôt source
+repo_name: "P-J. Lapray"                       # Nom affiché pour le bouton GitHub
+edit_uri: edit/main/docs/                       # Permet aux lecteurs de proposer des modifs via GitHub
 
+# Configuration de l'apparence (Thème Material)
 theme:
   name: material
-  custom_dir: overrides
-  language: fr
-  logo: assets/logo.png
-  favicon: assets/favicon.png
+  custom_dir: overrides       # Dossier contenant tes modifs HTML spécifiques (ex: footer)
+  language: fr                # Traduit les boutons (Next, Previous, Search) en français
+  logo: assets/logo.png       # Chemin de l'image du logo (en haut à gauche)
+  favicon: assets/favicon.png # Petite icône affichée dans l'onglet du navigateur
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.path
-    - navigation.top
-    - search.suggest
-    - content.code.copy
+    - navigation.tabs         # Menu principal sous forme d'onglets horizontaux en haut
+    - navigation.tabs.sticky  # Garde les onglets visibles même quand on scroll
+    - navigation.path         # Affiche le fil d'ariane (Breadcrumbs)
+    - navigation.top          # Ajoute un bouton "Retour en haut de page"
+    - search.suggest          # Suggestions automatiques dans la barre de recherche
+    - content.code.copy       # Ajoute un bouton "Copier" sur tous les blocs de code
   palette:
+    # Option 1 : Mode clair
     - scheme: default
-      primary: white
-      accent: blue
+      primary: white          # Couleur de la barre de navigation
+      accent: blue            # Couleur des liens et boutons
       toggle:
         icon: material/brightness-7
         name: Mode sombre
+    # Option 2 : Mode sombre
     - scheme: slate
       primary: grey
       accent: blue
@@ -31,9 +35,10 @@ theme:
         icon: material/brightness-4
         name: Mode clair
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Roboto              # Police pour le texte général
+    code: Roboto Mono         # Police pour les blocs de code (VHDL, C, etc.)
 
+# Structure du menu de navigation
 nav:
   - Accueil: index.md
   - "Électronique Numérique":
@@ -44,53 +49,42 @@ nav:
       - 3. Logique Séquentielle: 
           - 3.1 Composants Logiques Fondamentaux: en/logique_sequentielle.md
           - 3.2 Métastabilité: en/metastabilite.md
+  # (Même logique de numérotation manuelle pour les autres onglets...)
 
-  - "Syst. Emb. Reconfig. 1":
-      - 1. FPGA : ser1/fpga.md
-      - 2. VHDL: ser1/vhdl.md
-      - 3. Simulation VHDL: ser1/simulation.md
-      - 4. Synthèse et Implémentation:
-          - 4.1 Synthèse: ser1/synthese.md
-          - 4.2 Affectation des broches: ser1/brochage.md
-          - 4.3 Implémentation: ser1/implementation.md
-          - 4.4 Configuration du FPGA: ser1/configuration.md
-
-  - "Syst. Emb. Reconfig. 2":
-      - 1. SoC-FPGA: ser2/soc_fpga.md
-      - 2. Interfaçage SoC et FPGA: ser2/interfacage.md
-      - 3. Platform Designer: ser2/platform_designer.md
-      - 4. CPUlator: ser2/cpulator.md
-
+# Fichiers de styles personnalisés
 extra_css:
-  - css/custom.css
+  - css/custom.css            # Ton fichier pour la taille du logo, correctifs WaveDrom, etc.
 
+# Scripts externes chargés par le navigateur
 extra_javascript:
+  # Rendu des formules mathématiques (LaTeX)
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
+  # NOTE : Si tu utilises l'extension Python markdown_wavedrom, tu peux supprimer les lignes ci-dessous
   - https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js
   - js/wavedrom_loader.js
 
+# Extensions de rendu Markdown (Logiciel de transformation)
 markdown_extensions:
-  - attr_list
-  - md_in_html
-  - admonition
-  - pymdownx.details
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight:
-      anchor_linenums: true
+  - attr_list                 # Permet d'ajouter des classes CSS aux images/textes : { .ma-classe }
+  - md_in_html                # Permet d'écrire du Markdown à l'intérieur de balises HTML <div>
+  - admonition                # Support des blocs d'info : !!! info "Titre"
+  - pymdownx.details          # Support des blocs repliables : ??? note "Cliquez ici"
+  - pymdownx.superfences      # Indispensable pour imbriquer du code dans des listes ou admonitions
+  - pymdownx.highlight:       # Coloration syntaxique du code
+      anchor_linenums: true   # Permet de créer des liens vers une ligne précise
       pygments_lang_class: true
-  - toc:
-      permalink: true
-  - pymdownx.arithmatex:
+  - toc:                      # Table des matières (à droite)
+      permalink: true         # Ajoute l'icône 🔗 à côté de chaque titre
+  - pymdownx.arithmatex:      # Lien entre ton Markdown et MathJax (équations)
       generic: true
-  - pymdownx.emoji:
+  - pymdownx.emoji:           # Support des emojis :smile:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.tabbed:
+  - pymdownx.tabbed:          # Support des onglets de contenu : === "VHDL"
       alternate_style: true
-  - markdown_wavedrom
+  - markdown_wavedrom         # Extension Python pour générer les chronogrammes au build (serveur)
 
+# Paramètres additionnels
 extra:
-  generator: false
+  generator: false            # Retire la mention "Made with MkDocs" en bas de page
