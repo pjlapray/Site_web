@@ -17,7 +17,7 @@ Ce tableau présente les composants nécessaires pour le nouveau support pédago
 | **Module 2 Relais** | Commutation Pompe / Ventilateur. | At. 3 | 4,00 € | <a href="https://fr.rs-online.com/web/p/modules-de-developpement-pour-la-robotique-la-gestion-d-alimentation-et-les-moteurs/2651120" target="_blank">Voir</a> |
 | :material-check-decagram-outline: **Écran LCD I2C** | Affichage des données supervisées. | At. 1 | 5,50 € | <a href="https://fr.rs-online.com/web/p/afficheurs-monochromes-lcd/0735064?gb=a" target="_blank">Voir</a> |
 | :material-check-decagram-outline: **Capteur LDR** | Mesure de l'ensoleillement. | At. 3 | 1,00 € | <a href="https://fr.rs-online.com/web/p/photoresistances/0596141" target="_blank">Voir</a> |
-| **Structure** Plaastique ou plexi| Bac et couvercle. | Tous | 12,00 € | <a href="https://www.ferplast.fr/products/geo-medium" target="_blank">Voir</a> ou <a href="https://www.ikea.com/fr/fr/cat/samla-serie-12553/" target="_blank">Voir</a> |
+| **Structure** Plaastique ou plexi| Bac et couvercle. | Tous | 12,00 € | <a href="https://www.ferplast.fr/products/geo-medium" target="_blank">Voir</a> ou <a href="https://www.ikea.com/fr/fr/cat/samla-serie-12553/" target="_blank">Voir</a> ou <a href="https://www.leclercbrico.fr/aquariums/61077-geo-small-bac-couvercle-coloris-ferplast.html" target="_blank">Voir</a> |
 | **Tuyauterie** | Distribution de l'eau. | Tous | 6,00 € | - |
 | **TOTAL ESTIMÉ** | | | **~68,00 €** | |
 
