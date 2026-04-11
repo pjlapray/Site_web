@@ -102,5 +102,5 @@ Le décodeur active une sortie spécifique parmi $2^n$ en fonction d'un code bin
 
 
 
-!!! tip "Le saviez-vous ?"
+!!! info "Le saviez-vous ?"
     Un décodeur est souvent utilisé pour transformer un nombre binaire en un affichage lisible (par exemple, un décodeur 7 segments pour afficher les chiffres).
