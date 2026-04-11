@@ -16,7 +16,7 @@ Ce tableau présente les composants nécessaires pour le nouveau support pédago
 | :material-check-decagram-outline: **Ventilateur (12V)** | Régulation thermique. | At. 4 | 5,00 € | <a href="https://fr.rs-online.com/web/p/ventilateurs-axiaux/1442036" target="_blank">Voir</a> |
 | **Module 2 Relais** | Commutation Pompe / Ventilateur. | At. 3 | 4,00 € | <a href="https://fr.rs-online.com/web/p/modules-de-developpement-pour-la-robotique-la-gestion-d-alimentation-et-les-moteurs/2651120" target="_blank">Voir</a> |
 | :material-check-decagram-outline: **Écran LCD I2C** | Affichage des données supervisées. | At. 1 | 5,50 € | <a href="https://fr.rs-online.com/web/p/afficheurs-monochromes-lcd/0735064?gb=a" target="_blank">Voir</a> |
-| :material-check-decagram-outline: **Capteur LDR** | Mesure de l'ensoleillement. | At. 3 | 1,00 € | <a href="https://fr.rs-online.com/web/p/photoresistances/0596141" target="_blank">Voir</a> |
+| :material-check-decagram-outline: **Capteur LDR** | Mesure de l'ensoleillement. Il faut un diviseur de tension. | At. 3 | 1,00 € | <a href="https://fr.rs-online.com/web/p/photoresistances/0596141" target="_blank">Voir</a> |
 | **Structure** Plaastique ou plexi| Bac et couvercle. | Tous | 12,00 € | <a href="https://www.ferplast.fr/products/geo-medium" target="_blank">Voir</a> ou <a href="https://www.ikea.com/fr/fr/cat/samla-serie-12553/" target="_blank">Voir</a> ou <a href="https://www.leclercbrico.fr/aquariums/61077-geo-small-bac-couvercle-coloris-ferplast.html" target="_blank">Voir</a> |
 | **Tuyauterie** | Distribution de l'eau. | Tous | 6,00 € | - |
 | **TOTAL ESTIMÉ** | | | **~68,00 €** | |
@@ -48,9 +48,15 @@ Ce projet est conçu pour réutiliser la platine d'alimentation :
 
 ---
 
-## 🚀 Particularités du prototype
+## Particularités du prototype
 
 1. **Tension d'alimentation :** Utilisation du **12V** pour la puissance (pompe/ventilation) et du **5V** pour la commande et la bande LED.
 2. **Modularité :** Possibilité d'ajouter un module **ESP32-CAM** pour surveiller la croissance des plantes à distance (mais très peu probable pdt les 2 semaines...).
 3. **Sympa :** L'ajout de la **bande LED RGB** permet d'aborder la synthèse additive des couleurs et l'influence des longueurs d'onde (Bleu/Rouge) sur la photosynthèse.
 
+## 🚀 Simulation du prototype
+
+<div style="border: 1px solid #dee2e6; border-radius: 8px; padding: 10px; background: #f8f9fa; margin: 20px 0; text-align: center;">
+    <iframe width="725" height="453" src="https://www.tinkercad.com/embed/jU2lx74vJWN?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    <p><em>Mise en œuvre avec des circuits intégrés de la série 74HC.</em></p>
+</div>
