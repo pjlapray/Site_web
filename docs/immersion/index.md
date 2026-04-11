@@ -2,7 +2,7 @@
 
 ## 🌿 Liste du matériel : Prototype Serre Connectée
 
-Ce tableau présente les composants nécessaires pour le nouveau support pédagogique de serre automatisée. Ce système est conçu pour être alimenté par la **platine 3.3V / 5V / 12V** déjà utilisée.
+Ce tableau présente les composants nécessaires pour le nouveau support pédagogique de serre automatisée. Ce système est conçu pour être alimenté par la **platine 3.3V / 5V / 12V** de JJ.
 
 
 
@@ -23,12 +23,12 @@ Ce tableau présente les composants nécessaires pour le nouveau support pédago
 
 !!! info "A prévoir également :"
 
-	* Gaine thermo, 
+	* Gaine thermo (en stock), 
 	* Colliers de serrage (Rilsan), 
 	* Gaine spirale,
-	* Fiche JST ou bornier à vis (pour pouvoir séparer facilement le bac de l'alim/contrôle
+	* Fiche JST ou bornier à vis (pour pouvoir séparer facilement le bac de l'alim/contrôle,
 	* Nappe Ribon pour LCD ?
-	* Etiqueteuse pour identifier chaque lot de fils, car le nombre de capteurs peut être important.
+	* Etiqueteuse pour identifier chaque lot de fils, car le nombre de capteurs pourra être important.
 
 
 > :warning:
@@ -46,12 +46,11 @@ Ce projet est conçu pour réutiliser la platine d'alimentation :
 * **Sortie 5V :** Dédiée à la logique (Arduino, Capteurs, Écran) et à la bande LED.
 * **Sortie 3.3V :** Disponible pour une future extension IoT.
 
-
 ---
 
-## 🚀 Points clés du prototype
+## 🚀 Particularités du prototype
 
-1. **Polyvalence énergétique :** Utilisation du **12V** pour la puissance (pompe/ventilation) et du **5V** pour la commande et la bande LED.
+1. **Tension d'alimentation :** Utilisation du **12V** pour la puissance (pompe/ventilation) et du **5V** pour la commande et la bande LED.
 2. **Modularité :** Possibilité d'ajouter un module **ESP32-CAM** pour surveiller la croissance des plantes à distance (mais très peu probable pdt les 2 semaines...).
 3. **Sympa :** L'ajout de la **bande LED RGB** permet d'aborder la synthèse additive des couleurs et l'influence des longueurs d'onde (Bleu/Rouge) sur la photosynthèse.
 
