@@ -46,6 +46,8 @@ Ce projet est conçu pour réutiliser la platine d'alimentation :
 * **Sortie 5V :** Dédiée à la logique (Arduino, Capteurs, Écran) et à la bande LED.
 * **Sortie 3.3V :** Disponible pour une future extension IoT.
 
+Idée JJ : commander leds relais avec des ULN
+
 ---
 
 ## Particularités du prototype
