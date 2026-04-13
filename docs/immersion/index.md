@@ -58,5 +58,5 @@ Ce projet est conçu pour réutiliser la platine d'alimentation :
 
 <div style="border: 1px solid #dee2e6; border-radius: 8px; padding: 10px; background: #f8f9fa; margin: 20px 0; text-align: center;">
     <iframe width="725" height="453" src="https://www.tinkercad.com/embed/jU2lx74vJWN?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-    <p><em>Mise en œuvre du prototype (les moteur CC simulent la pompe et le ventilo...).</em></p>
+    <p><em>Mise en œuvre du prototype (les moteur CC simulent la pompe et le ventilo...). La commande est en tout ou rien, et la décision est faite de manière soft : l'objectif des ateliers est de proposer des outils pour améliorer cela (asservissement et logique de décision câblée). </em></p>
 </div>
