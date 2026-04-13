@@ -24,7 +24,7 @@ Ce tableau présente les composants nécessaires pour le nouveau support pédago
 !!! info "A prévoir également :"
 
 	* Gaine thermo (en stock), 
-	* Colliers de serrage (Rilsan), 
+	* Colliers de serrage, 
 	* Gaine spirale,
 	* Fiche JST ou bornier à vis (pour pouvoir séparer facilement le bac de l'alim/contrôle,
 	* Nappe Ribon pour LCD ?
