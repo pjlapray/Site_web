@@ -14,7 +14,7 @@ Ce tableau présente les composants nécessaires pour le nouveau support pédago
 | **Bande LED RGB** | Gestion du spectre (suivant la variété) et indicateur d'état possible. | At. 1 | 8,00 € | <a href="https://fr.rs-online.com/web/p/rubans-led/1807502" target="_blank">Voir</a> |
 | **Mini-pompe (12V)** | Actionneur pour l'irrigation. | At. 4 | 20,00 € | <a href="https://www.lextronic.fr/mini-pompe-a-eau-1-1-l-min-11296.html" target="_blank">Voir</a> ou <a href="https://www.leroymerlin.fr/produits/pompe-submersible-miniature-12-v-cc-3-metres-de-haut-resistante-a-des-temperatures-jusqu-a-60-98813622.html?megaBoost&at_source=google" target="_blank">Voir</a> ou <a href="https://funduinoshop.com/fr/modules-electroniques/vannes-et-pompes/pompes/r385-pompe-a-eau-6-12v" target="_blank">Voir</a>|
 | :material-check-decagram-outline: **Ventilateur (12V)** | Régulation thermique. | At. 4 | 5,00 € | <a href="https://fr.rs-online.com/web/p/ventilateurs-axiaux/1442036" target="_blank">Voir</a> |
-| **Module 2 Relais** | Commutation Pompe / Ventilateur. | At. 3 | 4,00 € | <a href="https://fr.rs-online.com/web/p/modules-de-developpement-pour-la-robotique-la-gestion-d-alimentation-et-les-moteurs/2651120" target="_blank">Voir</a> |
+| **ULN2803** | Commutation Pompe / Ventilateur. | At. 3 | en stock | <a href="" target="_blank">Voir</a> |
 | :material-check-decagram-outline: **Écran LCD I2C** | Affichage des données supervisées. | At. 1 | 5,50 € | <a href="https://fr.rs-online.com/web/p/afficheurs-monochromes-lcd/0735064?gb=a" target="_blank">Voir</a> |
 | :material-check-decagram-outline: **Capteur LDR** | Mesure de l'ensoleillement. Il faut un diviseur de tension. | At. 3 | 1,00 € | <a href="https://fr.rs-online.com/web/p/photoresistances/0596141" target="_blank">Voir</a> |
 | **Structure** Plaastique ou plexi| Bac et couvercle. | Tous | 12,00 € | <a href="https://www.ferplast.fr/products/geo-medium" target="_blank">Voir</a> ou <a href="https://www.ikea.com/fr/fr/cat/samla-serie-12553/" target="_blank">Voir</a> ou <a href="https://www.leclercbrico.fr/aquariums/61077-geo-small-bac-couvercle-coloris-ferplast.html" target="_blank">Voir</a> |
@@ -46,7 +46,7 @@ Ce projet est conçu pour réutiliser la platine d'alimentation :
 * **Sortie 5V :** Dédiée à la logique (Arduino, Capteurs, Écran) et à la bande LED.
 * **Sortie 3.3V :** Disponible pour une future extension IoT.
 
-Idée JJ : commander leds relais avec des ULN
+Utiliser les ULN pour les moteurs. Utiliser servomoteur pour ouverture panneau aération.
 
 ---
 
@@ -55,6 +55,16 @@ Idée JJ : commander leds relais avec des ULN
 1. **Tension d'alimentation :** Utilisation du **12V** pour la puissance (pompe/ventilation) et du **5V** pour la commande et la bande LED.
 2. **Modularité :** Possibilité d'ajouter un module **ESP32-CAM** pour surveiller la croissance des plantes à distance (mais très peu probable pdt les 2 semaines...).
 3. **Sympa :** L'ajout de la **bande LED RGB** permet d'aborder la synthèse additive des couleurs et l'influence des longueurs d'onde (Bleu/Rouge) sur la photosynthèse.
+
+## Détails sur le matériel
+
+* Ventilateurs 12V pc (pris sur un processeur) : 
+
+	* Noir : GND (La masse / le -).
+	* Jaune : +12V (L'alimentation).
+	* Vert : Tachymètre (mesure vitesse de rotation en RPM). Rajouter une rés. de pull-up en entrée.
+	* Bleu : PWM (Le fil de contrôle). C'est lui qui permet de régler la vitesse sans couper l'alimentation.
+
 
 ## 🚀 Simulation du prototype
 
