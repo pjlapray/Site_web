@@ -29,7 +29,8 @@ Ce tableau présente les composants nécessaires pour le nouveau support pédago
 	* Fiche JST ou bornier à vis (pour pouvoir séparer facilement le bac de l'alim/contrôle,
 	* Nappe Ribon pour LCD ?
 	* Etiqueteuse pour identifier chaque lot de fils, car le nombre de capteurs pourra être important.
-
+	* Horloge temps réel
+	* Breadboard à remplacer
 
 > :warning:
 > **Attention à l'humidité**
